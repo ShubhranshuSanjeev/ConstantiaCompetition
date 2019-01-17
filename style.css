@@ -1,0 +1,286 @@
+* {
+  box-sizing:border-box;
+  font-weight:100;
+}
+
+body,html{
+  font-size:16px;
+  font-family: serif;
+  margin:0px;
+  padding: 0px;
+  color:#525c65;
+}
+
+p{
+  font-family: Open sans , sans-serif;
+  font-size: 0.87em;
+}
+
+h3{
+  font-size:3em;
+}
+
+h4{
+  font-size:2em;
+}
+
+h5{
+  font-size: 2em
+}
+
+
+/****NAV_BAR****/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-size:1.5em;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #1d1c22;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+
+/**HEADER***/
+
+header {   
+  
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* The Background image */
+  background-image: url("bird-bg.jpg");
+
+  /* Height of the header */
+  height: 100vh;
+  
+  /*parallax effect */
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+#fore-bird{
+  width: 444px;
+  height: 733px;
+  background-image: url('fore-bird.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+#back-bird{
+  width: 246px;
+  height: 298px;
+  background-image: url('back-bird.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+/**LOGO-STYLES***/
+
+.logo{  
+  position: absolute;
+  top: 45%;
+  text-align:center;
+}
+
+.logo > h1{
+  font-size:4.3em;
+  font-weight: 800;
+  margin-top: 0px;
+  color: #000;
+}
+
+
+/*******MAIN BODY***/
+
+.content_1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0,0,0,0.1);
+  color: rgba(0,0,0,0.8);
+  width:100%;
+  height: 400px;
+  padding:20px;
+  text-align: center;
+}
+
+.content_1 > h3{
+  margin: 30px 0px 30px 0px;
+}
+
+.content_1 > p{
+  width: 60%;
+}
+
+
+/**Animating-content***/
+
+.section_2{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  background-color:#fafbfc;
+  padding: 60px 0px 60px 0px;
+}
+
+.section_2 h3{
+  width:80%;
+}
+
+.services{
+  width:30%;
+  text-align: center;
+  background-color: #fff;
+  box-shadow:5px 5px 25px 0 rgba(46,61,73,.2);
+  border-radius: 4px;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+  margin: 0px 10px 0px 0px;
+  padding:0px 20px 20px 20px;
+}
+
+#animate_1{
+  transform: translateX(-60px);
+}
+
+#animate_2{
+  transform: translateY(90px);
+}
+
+#animate_3{
+  transform: translateX(60px);
+}
+
+
+/****Contact Us Section***/
+
+.section_4{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('https://z65ovrxjio4asccx3admgs10-wpengine.netdna-ssl.com/wp-content/uploads/sites/2/2016/02/contactus.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.overlay{
+  width: 50%;
+  height: 50%;
+}
+
+
+.overlay p{
+  width: 90%;
+  margin: 0px 0px 60px 0px;
+}
+
+#button {
+  background-color:#02ccba;
+  padding: 10px 50px 10px 50px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+/****Last Section*****/
+
+.section_5{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items:center;
+  margin-top: 50px;
+  padding:30px 0px 30px 0px;
+  text-align:justify;
+  background-color:#fafbfc;
+}
+
+.section_5 h3{
+  width: 100%;
+}
+
+.box{
+  width:45%;
+  background-color:#ffffff;
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  border-radius:4px;
+  padding:30px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+#box_1,#box_2,#box_3,#box_4{
+  opacity: 0;
+  transform: translate3d(0px,60px,0px);
+}
+
+/**Footer**/
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  background:#f7f7f7;
+  color: #525c65;
+  font-size: 1.3em;
+}
